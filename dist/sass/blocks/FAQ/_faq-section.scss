@@ -1,0 +1,75 @@
+.faq-section h2 {
+    margin-bottom: 45px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 65px;
+}
+
+.faq-section__main {
+    position: relative;
+    display: flex;
+}
+
+.faq-section__text-block {
+    position: relative;
+    width: calc(100% - 342px);
+    columns: 380px auto;
+    column-gap: 0;
+}
+.faq-section__text-block p {
+    padding-right: 60px;
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+p:first-of-type {
+    margin-top: 0;
+}
+p {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.39;
+    margin: 20px 0;
+}
+
+.links-aside {
+    position: sticky;
+    top: 0;
+    width: 340px;
+    padding-left: 50px;
+    min-height: 515px;
+    height: max-content;
+}
+.links-aside h5 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+.links-aside__list {
+    margin: 0;
+    padding: 0;
+}
+.links-aside__item {
+    padding: 0;
+    margin: 0 0 20px;
+}
+.links-aside__link {
+    font-size: 18px;
+    line-height: 25px;
+    text-decoration-line: underline;
+    color: $main-color;
+}
+.links-aside:after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: #000;
+}

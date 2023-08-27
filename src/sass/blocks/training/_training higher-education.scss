@@ -1,0 +1,22 @@
+.training__body {
+    display: grid;
+    grid-template-columns: minmax(300px, 475px) repeat(2, minmax(300px, 410px));
+    grid-auto-rows: max-content;
+}
+.training h2 {
+    display: inline-block;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 38px;
+    line-height: 65px;
+}
+.training.higher-education .training__body-item, .training.professional-education .training__body-item {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.training__body-item {
+    display: flex;
+    flex-direction: column;
+}
