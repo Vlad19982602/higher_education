@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Vlad19982602/higher_education.git"
+    "url": "git+https://github.com/Vlad19982602/college.git"
   },
   "author": "Vlad",
   "license": "ISC",
   "bugs": {
-    "url": "git+https://github.com/Vlad19982602/higher_education/issues"
+    "url": "git+https://github.com/Vlad19982602/college/issues"
   },
-  "homepage": "https://github.com/Vlad19982602/higher_education.git",
+  "homepage": "https://github.com/Vlad19982602/college.git",
   "devDependencies": {
     "browser-sync": "^2.27.11",
     "core-js": "^3.29.1",
