@@ -7,7 +7,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 	scrolling('.pageup');
 	mask('[name="form_text_2"]');
-	accordion('.btn-collapse');
+	accordion('.btn-collapse', '.collapse');
 	tabs();
 });
 

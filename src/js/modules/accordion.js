@@ -2,9 +2,6 @@ const accordion = (triggersSelector, itemsSelector) => {
     const btns = document.querySelectorAll(triggersSelector),
         blocks = document.querySelectorAll(itemsSelector);
 
-	//blocks.forEach(block => {
-	//	block.classList.add('animated', 'fadeInDown');
-	//});
 
 	//btns.forEach(btn => {
 	//    btn.addEventListener('click', function() {
@@ -26,28 +23,31 @@ const accordion = (triggersSelector, itemsSelector) => {
     //this.nextElementSibling.classList.toggle('show');
 
 
-
-    btns.forEach(btn => {
-        btn.addEventListener('click', function() {
-            if (!this.classList.contains('opened')) {
-                btns.forEach(btn => {
-                    btn.classList.remove('opened');
-                });
-                this.classList.add('opened');
-            } 
+    if (btns) {
+        btns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                for(let j = 0; j < btns.length; j++) {
+                    btns[j].classList.toggle('opened');
+                }
+                for (let i = 0; i < blocks.length; i++) {
+                    blocks[i].classList.toggle('show');
+                }
+            });
         });
-    });
+    }
 
-    blocks.forEach(block => {
-        block.addEventListener('click', function() {
-            if (!this.classList.contains('show')) {
-                blocks.forEach(block => {
-                    block.classList.remove('show');
-                });
-                this.classList.add('show');
-            } 
+    if (blocks) {
+        blocks.forEach(block => {
+            block.addEventListener('click', function() {
+                if (!this.classList.contains('show')) {
+                    blocks.forEach(block => {
+                        block.classList.remove('show');
+                    });
+                    this.classList.toggle('show');
+                } 
+            });
         });
-    });
+    }
 
 
 
